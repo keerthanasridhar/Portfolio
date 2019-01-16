@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="106px" viewBox="0 0 63 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>keelogo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.63587311%" y1="90.6958108%" x2="100%" y2="6.67043844%" id="linearGradient-1">
+            <stop stop-color="#9D54FE" offset="0%"></stop>
+            <stop stop-color="#04F9BD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="keelogo" transform="translate(0.000000, 3.000000)">
+            <g id="Group-6">
+                <g id="Group-5" transform="translate(31.500000, 51.500000) scale(-1, 1) rotate(90.000000) translate(-31.500000, -51.500000) translate(-20.000000, 20.000000)">
+                    <g id="Group-7">
+                        <polygon id="Triangle" fill="#B69FCE" transform="translate(37.000000, 31.500000) scale(-1, 1) rotate(90.000000) translate(-37.000000, -31.500000) " points="37.3924051 8 68 55 6 55"></polygon>
+                        <path d="M103,31.5 L18.5,31.5" id="Line-2" stroke="#000000" stroke-width="3" fill="#000000" transform="translate(60.500000, 31.000000) scale(-1, 1) rotate(360.000000) translate(-60.500000, -31.000000) "></path>
+                        <ellipse id="Oval" fill="#000000" transform="translate(95.500000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-95.500000, -31.500000) " cx="95.5" cy="31.5" rx="4.5" ry="4"></ellipse>
+                        <ellipse id="Oval" fill="#000000" transform="translate(77.000000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-77.000000, -31.500000) " cx="77" cy="31.5" rx="4" ry="3.5"></ellipse>
+                        <ellipse id="Oval" fill="#000000" transform="translate(58.500000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-58.500000, -31.500000) " cx="58.5" cy="31.5" rx="3.5" ry="3"></ellipse>
+                        <ellipse id="Oval" fill="#000000" transform="translate(40.000000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-40.000000, -31.500000) " cx="40" cy="31.5" rx="3" ry="2.5"></ellipse>
+                        <ellipse id="Oval" fill="#000000" transform="translate(22.500000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-22.500000, -31.500000) " cx="22.5" cy="31.5" rx="2.5" ry="2"></ellipse>
+                        <path d="M8,39 C9.58838926,39 11.0806726,38.6342413 12.3760697,37.9923064 C13.3982533,37.4857626 14.2978436,36.8072544 15.0253235,36.000797 C15.6815681,35.2733084 16.1977584,34.4417014 16.5375459,33.5382858 C16.8375125,32.7407445 17,31.8872394 17,31 C17,30.1221962 16.8409501,29.2774128 16.5470693,28.487178 C16.1807441,27.5021425 15.6049203,26.6018637 14.8665055,25.8280369 C14.0427996,24.9648289 13.016773,24.2589718 11.853537,23.7683425 C10.6854114,23.2756507 9.37892037,23 8,23 C6.84245506,23 5.73595029,23.194248 4.71949049,23.548073 C3.45455301,23.9883919 2.3290651,24.6758423 1.41819849,25.5436049 C0.863400064,26.0721492 0.388223751,26.6675873 0.00965574667,27.3148204 C-0.635432462,28.4177198 -1,29.6710157 -1,31 C-1,31.991036 -0.797270408,32.939983 -0.426663429,33.8158614 C-0.0943952185,34.6011314 0.372813579,35.3276685 0.949846654,35.973147 C1.70047729,36.8128147 2.63695233,37.5153152 3.70398357,38.0315037 C4.98065766,38.6491092 6.44422918,39 8,39 Z" id="Oval" stroke="#000000" stroke-width="5" transform="translate(8.000000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-8.000000, -31.000000) "></path>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(31.500000, 60.500000) rotate(270.000000) translate(-31.500000, -60.500000) translate(-11.000000, 56.000000)"></g>
+            </g>
+            <g id="Group-6">
+                <g id="Group-5" transform="translate(31.500000, 51.500000) scale(-1, 1) rotate(90.000000) translate(-31.500000, -51.500000) translate(-20.000000, 20.000000)">
+                    <g id="Group-7">
+                        <polygon id="Triangle" fill="url(#linearGradient-1)" transform="translate(37.000000, 31.500000) scale(-1, 1) rotate(90.000000) translate(-37.000000, -31.500000) " points="37.3924051 8 68 55 6 55"></polygon>
+                        <path d="M103,31.5 L18.5,31.5" id="Line-2" stroke="#FFFFFF" stroke-width="3" transform="translate(60.500000, 31.000000) scale(-1, 1) rotate(360.000000) translate(-60.500000, -31.000000) "></path>
+                        <ellipse id="Oval" fill="#FFFFFF" transform="translate(95.500000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-95.500000, -31.500000) " cx="95.5" cy="31.5" rx="4.5" ry="4"></ellipse>
+                        <ellipse id="Oval" fill="#FFFFFF" transform="translate(77.000000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-77.000000, -31.500000) " cx="77" cy="31.5" rx="4" ry="3.5"></ellipse>
+                        <ellipse id="Oval" fill="#FFFFFF" transform="translate(58.500000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-58.500000, -31.500000) " cx="58.5" cy="31.5" rx="3.5" ry="3"></ellipse>
+                        <ellipse id="Oval" fill="#FFFFFF" transform="translate(40.000000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-40.000000, -31.500000) " cx="40" cy="31.5" rx="3" ry="2.5"></ellipse>
+                        <ellipse id="Oval" fill="#FFFFFF" transform="translate(22.500000, 31.500000) scale(-1, 1) rotate(360.000000) translate(-22.500000, -31.500000) " cx="22.5" cy="31.5" rx="2.5" ry="2"></ellipse>
+                        <path d="M8,39 C9.58838926,39 11.0806726,38.6342413 12.3760697,37.9923064 C13.3982533,37.4857626 14.2978436,36.8072544 15.0253235,36.000797 C15.6815681,35.2733084 16.1977584,34.4417014 16.5375459,33.5382858 C16.8375125,32.7407445 17,31.8872394 17,31 C17,30.1221962 16.8409501,29.2774128 16.5470693,28.487178 C16.1807441,27.5021425 15.6049203,26.6018637 14.8665055,25.8280369 C14.0427996,24.9648289 13.016773,24.2589718 11.853537,23.7683425 C10.6854114,23.2756507 9.37892037,23 8,23 C6.84245506,23 5.73595029,23.194248 4.71949049,23.548073 C3.45455301,23.9883919 2.3290651,24.6758423 1.41819849,25.5436049 C0.863400064,26.0721492 0.388223751,26.6675873 0.00965574667,27.3148204 C-0.635432462,28.4177198 -1,29.6710157 -1,31 C-1,31.991036 -0.797270408,32.939983 -0.426663429,33.8158614 C-0.0943952185,34.6011314 0.372813579,35.3276685 0.949846654,35.973147 C1.70047729,36.8128147 2.63695233,37.5153152 3.70398357,38.0315037 C4.98065766,38.6491092 6.44422918,39 8,39 Z" id="Oval" stroke="#FFFFFF" stroke-width="5" transform="translate(8.000000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-8.000000, -31.000000) "></path>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(31.500000, 60.500000) rotate(270.000000) translate(-31.500000, -60.500000) translate(-11.000000, 56.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>
