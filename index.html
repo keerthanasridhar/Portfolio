@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <title>Fullscrenn Menu jQuery</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+  <script src="./a.js"></script>
+</head>
+
+<body>
+
+  <section class="mln_sec mln_sec_color1 height-class">
+    <div>
+      <span class="logo">
+        <img src="./logo.svg" alt="img" />
+      </span>
+
+
+
+      <p >
+        <span id="page1_line_one" class = "font-upfront"> My name is Keerthana Sridhar </span>
+      </br> I'm a San Francisco based <span class="normal">UI/UX Engineer</span>. I love to Design and Code
+        with a healthy mix of perspectives, learning and a cup of cofee!
+      </p>
+      <div class="svg-wrapper">
+        <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+          <rect id="shape" height="40" width="150" />
+          <div id="text">
+            <a href=" ">
+              <span class="spot"> </span>
+              View past work
+            </a>
+          </div>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="mln_sec mln_sec_color2 height-class">
+
+       <!-- Filter menu -->
+    <div class="filter__menu">
+				<nav class="cl-effect-1">
+					<a class="color-1 filter-button" data-filter="all"  >All</a>
+					<a class="color-1 filter-button"  data-filter="design" >Design</a>
+					<a class="color-1 filter-button"  data-filter="ui">UI</a>
+				</nav>
+      </div>
+            <!-- Filter close menu -->
+        
+            <!-- grid project begins -->
+      <div class="grid">
+          <a href="./projects/project1.html" class="grid__item grid__item--bg filter design">
+              <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/1.png)"></div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Infinity Gauntlet</h3>
+                <span class="grid__item-cta">View Project</span>
+              </div>
+            </a>
+            <a href="#" class="grid__item grid__item--bg filter design">
+                <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/2.png)"></div>
+                <div class="grid__item-content">
+                  <h3 class="grid__item-title">Health-Bloom app</h3>
+                  <span class="grid__item-cta">View Project</span>
+                </div>
+              </a>
+              <a href="#" class="grid__item grid__item--bg filter ui">
+                  <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/3.png)"></div>
+                  <div class="grid__item-content">
+                    <h3 class="grid__item-title">Twist & Untwist </h3>
+                    <span class="grid__item-cta">View Project</span>
+                  </div>
+                </a>
+                <a href="#" class="grid__item grid__item--bg filter ui">
+                    <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/4.png)"></div>
+                    <div class="grid__item-content">
+                      <h3 class="grid__item-title">Day/Night Animation</h3>
+                      <span class="grid__item-cta">View Project</span>
+                    </div>
+                  </a>
+                  <a href="#" class="grid__item grid__item--bg filter design">
+                      <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/5.png)"></div>
+                      <div class="grid__item-content">
+                        <h3 class="grid__item-title">Usability Test</h3>
+                        <span class="grid__item-cta">View Project</span>
+                      </div>
+                    </a>
+                      <a href="#" class="grid__item grid__item--bg filter ui">
+                          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/7.png)"></div>
+                          <div class="grid__item-content">
+                            <h3 class="grid__item-title">Flocking Animation</h3>
+                            <span class="grid__item-cta">View Project</span>
+                          </div>
+                        </a>
+                        <a href="#" class="grid__item grid__item--bg filter design">
+                            <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/8.png)"></div>
+                            <div class="grid__item-content">
+                              <h3 class="grid__item-title">Illustration</h3>
+                              <span class="grid__item-cta">View Project</span>
+                            </div>
+                          </a>
+                          <a href="#" class="grid__item grid__item--bg filter design">
+                              <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/6.png)"></div>
+                              <div class="grid__item-content">
+                                <h3 class="grid__item-title">Re - Design</h3>
+                                <span class="grid__item-cta">View Project</span>
+                              </div>
+                            </a>
+
+          </div>
+   
+  </section>
+
+  <section class="mln_sec mln_sec_color3 height-class">
+    <p>
+      “It’s fine to celebrate success, but it is more important to heed the lessons of failure.” – Bill Gates
+    </p>
+  </section>
+
+  <!-- social menu -->
+  <div class="component">
+  <button class="cn-button" id="cn-button"><span class="fas fa-phone"></span></button>
+<div class="cn-wrapper" id="cn-wrapper">
+   <ul>
+       <li><a href="https://www.linkedin.com/in/keesridhar/"  target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+       <li><a href="https://github.com/keerthanasridhar"  target="_blank"><span class="fab fa-github"></span></a></li>
+       <li><a href="#"  target="_blank"><span class="fas fa-home"></span></a></li>
+       <li><a href="mailto:keerthasri93@gmail.com"  target="_blank"><span class="fas fa-at"></span></a></li>
+       <li><a href="tel:571-290-8055"  target="_blank"><span class="fas fa-mobile"></span></a></li>
+   </ul>
+</div>
+<div id="cn-overlay" class="cn-overlay"></div>
+</div>
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //call the plugin
+      $('body').mln_full({
+        'target': '.mln_sec',
+        'color': '#455a64',
+        'hover': '#1BBFDF',
+        'full': false,
+        'itens': ['Home', 'Projects', 'About me', 'Chat with me?']
+      });
+    });
+  </script>
+    <script src="./imagesloaded.pkgd.min.js"></script>
+     <script src="./TweenMax.min.js"></script>
+     <script src="./nearby.js"></script>
+     <script type="text/javascript" src="./charming.min.js"></script>
+
+     <script type="text/javascript" src="./demo6.js"></script>
+
+   <script type="text/javascript" src="./mln_full.js"></script>
+</body>
+
+</html>
