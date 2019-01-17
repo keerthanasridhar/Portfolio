@@ -1,4 +1,4 @@
-    
+   
 /* ENDS HERE! */
 
   /* Section 2 projects */
@@ -6,15 +6,20 @@
 	padding: 5rem 2rem;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(4,calc(20% - 3vw));
+	grid-template-columns: repeat(3,calc(30% - 3vw));
 	grid-column-gap: 8vw;
-	grid-row-gap: 25vh;
+	grid-row-gap: 15vh;
 	max-width: 1300px;
 }
 
 .grid__item {
-	height: 25vh;
+	height: 30vh;
 	position: relative;
+	box-shadow: 0 1px 3px 
+}
+
+.grid__item:hover {
+	box-shadow: 0 14px 28px #000; 
 }
 
 .grid__item--bg {
@@ -22,7 +27,7 @@
 }
 
 .grid__item:nth-child(even) {
-	margin-top: -10vh;
+	margin-top: -4vh;
 }
 
 .grid__item-imgwrap,
@@ -77,8 +82,8 @@
 	width: 100%;
 	font-weight: bold;
 	display: block;
-	font-size: 1.5rem;
-	color: #777DEE;
+	font-size: 1.9rem;
+	color: #9D54FE;
 	text-transform: lowercase;
 	display: flex;
 	justify-content: flex-end;
