@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script> -->
   <link rel="stylesheet" href="assets/css/style.css" />
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -160,7 +160,7 @@ let mood = "TodaysMood";
       </header>
 
       <div class="grid">
-        <a  class="grid__item grid__item--bg filter design trigger_popup_fricc">
+        <a class="grid__item grid__item--bg filter design trigger_popup_fricc" onclick="openNav('infinity')">
           <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/1.png)"></div>
           <div class="grid__item-content">
             <h3 class="grid__item-title">Infinity Gauntlet</h3>
@@ -169,64 +169,83 @@ let mood = "TodaysMood";
         </a>
 
 
-        <a href="projects/health.html" class="grid__item grid__item--bg filter design">
+        <a href="#" class="grid__item grid__item--bg filter design" onclick="openNav('bloom')">
           <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/2.png)"></div>
           <div class="grid__item-content">
             <h3 class="grid__item-title">Health-Bloom app</h3>
             <span class="grid__item-cta">View Project</span>
           </div>
         </a>
-        <a href="projects/twist.html" class="grid__item grid__item--bg filter ui">
-          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/3.png)"></div>
+        <a href="#" class="grid__item grid__item--bg filter ui" onclick="openNav('twist')">
+          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(projects/images/animation/cover.png)"></div>
           <div class="grid__item-content">
-            <h3 class="grid__item-title">Twist & Untwist </h3>
+            <h3 class="grid__item-title">Animation</h3>
             <span class="grid__item-cta">View Project</span>
           </div>
         </a>
-        <a href="projects/daynight.html" class="grid__item grid__item--bg filter ui">
-          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/4.png)"></div>
-          <div class="grid__item-content">
-            <h3 class="grid__item-title">Day/Night Animation</h3>
-            <span class="grid__item-cta">View Project</span>
-          </div>
-        </a>
-        <a href="#" class="grid__item grid__item--bg filter design">
-          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/5.png)"></div>
+        <a href="#" class="grid__item grid__item--bg filter design" onclick="openNav('use')">
+          <div class=" grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/5.png)"></div>
           <div class="grid__item-content">
             <h3 class="grid__item-title">Usability Test</h3>
             <span class="grid__item-cta">View Project</span>
           </div>
         </a>
-        <a href="#" class="grid__item grid__item--bg filter ui">
+        <a href="#" class="grid__item grid__item--bg filter design" onclick="openNav('food')">
           <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/7.png)"></div>
-          <div class="grid__item-content">
-            <h3 class="grid__item-title">Flocking Animation</h3>
-            <span class="grid__item-cta">View Project</span>
-          </div>
-        </a>
-        <a href="#" class="grid__item grid__item--bg filter design">
-          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/8.png)"></div>
           <div class="grid__item-content">
             <h3 class="grid__item-title">Illustration</h3>
             <span class="grid__item-cta">View Project</span>
           </div>
         </a>
-        <a href="#" class="grid__item grid__item--bg filter design">
-          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/6.png)"></div>
+        <a href="#" class="grid__item grid__item--bg filter design" onclick="openNav('design')">
+          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(img/600x600/8.png)"></div>
           <div class="grid__item-content">
             <h3 class="grid__item-title">Re - Design</h3>
             <span class="grid__item-cta">View Project</span>
           </div>
         </a>
+
+        <a href="#" class="grid__item grid__item--bg filter ui" onclick="openNav('scoop')">
+          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(projects/images/Scoop/1.png)"></div>
+          <div class="grid__item-content">
+            <h3 class="grid__item-title">Scoop Data</h3>
+            <span class="grid__item-cta">View Demo</span>
+          </div>
+        </a>
+        <a href="#" class="grid__item grid__item--bg filter ui" onclick="openNav('expensify')">
+          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(projects/images/expensify/1.png)"></div>
+          <div class="grid__item-content">
+            <h3 class="grid__item-title">Expencify</h3>
+            <span class="grid__item-cta">View Demo</span>
+          </div>
+		</a>
+		<a href="#" class="grid__item grid__item--bg filter ui" onclick="openNav('affect')">
+				<div class="grid__item-img grid__item-img--opaque" style="background-image: url(projects/images/affect/affect.png)"></div>
+				<div class="grid__item-content">
+				  <h3 class="grid__item-title">Affective Computing Research Study</h3>
+				  <span class="grid__item-cta">View Research</span>
+				</div>
+			  </a>
+
+        <a href="#" class="grid__item grid__item--bg filter ui" onclick="openNav('pig')">
+          <div class="grid__item-img grid__item-img--opaque" style="background-image: url(projects/images/pig/1.png)"></div>
+          <div class="grid__item-content">
+            <h3 class="grid__item-title">Pig Game</h3>
+            <span class="grid__item-cta">Play</span>
+          </div>
+        </a>
+
       </div>
-	  <div class="hover_bkgr_fricc">
-			<span class="helper"></span>
-			<div>
-			  <div class="popupCloseButton">X</div>
-			  <iframe src="projects/infinity.html"></iframe>
-			</div>
-			
-		  </div>
+
+      <!-- https://expensify-app-reactredux.herokuapp.com/ -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
+        <div class="overlay-content">
+          <iframe id="ifame" src="#"></iframe>
+
+          <!-- iframe -->
+        </div>
+      </div>
 
     </section>
   </div>

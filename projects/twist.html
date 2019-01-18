@@ -28,7 +28,7 @@
         </ul>
       </header>
       <div class="content">
-        <span class="image fill" data-position="center"><img src="images/twist/cover.png" alt="" /></span>
+        <span class="image fill" data-position="center"><img src="images/animation/cover.PNG" alt="" /></span>
       </div>
     </section>
 
@@ -38,7 +38,7 @@
         <h2 class="abc"> Project Description </h2>
       </header>
       <div class="content">
-        <p>Animation done using P5.js was one of projects from the Advanced Art and Animation class.The First project that was given was by randomly choosing a word from the word list and create an animation from that I picked twist.Which I did a simple MouseIspressed animation.</p>
+        <p>Animation done using P5.js was one of projects from the Advanced Art and Animation class.</p>
         <div class="table-wrapper">
           <header>
             <h3> Project Details </h3>
@@ -70,12 +70,16 @@
     <!-- Section -->
     <section>
       <header>
-        <h2 class="abc">Ideation</h2>
-
+        <h2 class="abc">Twist and Turn </h2>
+        <p class="abc">
+          First project that was given was by randomly choosing a word from the word list and create an animation from that I picked twist.Which I did a simple MouseIspressed animation.
+        </p>
       </header>
       <div class="content">
         <div class="gallery">
-          <a href="images/twist/ideation.png" class="landscape"><img src="images/twist/ideation.png" alt="" /></a>
+          <strong> Ideation </strong>
+          <a href="images/twist/ideation.png" class="landscape">
+            <img src="images/twist/ideation.png" alt="" style='height: 100%; width: 100%; object-fit: contain' /></a>
 
         </div>
 
@@ -86,29 +90,155 @@
             <p class="abc">Aesthetics was quite a challenge and was decided based on be colorful and the needs to attaract children in using the application.</p>
           </header>
           <div class="content">
-            
-              <span class="image main" > 
-                  <iframe src="p5/a1/index.html" width ="500" height="400"></iframe>
-                </span>
+            Move your mouse pointer.
+            <span class="image main border">
+              <iframe src="p5/a1/index.html" width="500" height="400"></iframe>
+            </span>
           </div>
         </section>
 
         <section>
-            <header>
-              <h3 class="abc">Twist and Turn</h3>
-              <p class="abc">I had to create an cyclic opposite of twist and turn and after numerous ideation process,I came out with a casette tape that could show both and created a rotation animation with the circle.</p>
-            </header>
-            <div class="content">
-              
-                <span class="image main">
-                    <iframe src="p5/a1a/index 2.html" width ="500" height="400"></iframe>
-                  </span>
-            </div>
-          </section>
+          <header>
+            <h3 class="abc">Twist and Turn</h3>
+            <p class="abc">I had to create an cyclic opposite of twist and turn and after numerous ideation process,I came out with a casette tape that could show both and created a rotation animation with the circle.</p>
+          </header>
+          <div class="content">
+
+            <span class="image main border">
+              <iframe src="p5/a1a/index 2.html" width="500" height="400"></iframe>
+            </span>
+          </div>
+        </section>
 
       </div>
     </section>
 
+    <section>
+      <header>
+        <h2 class="abc">Day/Night Animation </h2>
+        <p class="abc">
+          I chose Day & Night and wanted to show the animation of the sun rising and setting that could evoke the concept of day and night.
+        </p>
+      </header>
+      <div class="content">
+        <div class="gallery">
+          <strong> Ideation </strong>
+          <a href="images/animation/2.png" class="landscape">
+            <img src="images/animation/2.png" alt="" style='height: 100%; width: 100%; object-fit: contain' /></a>
+
+        </div>
+
+        <!-- Section -->
+        <section>
+          <header>
+            <h3 class="abc">Cycle animation</h3>
+            <p class="abc">Where the frame movement was done the wheels</p>
+          </header>
+          <div class="content">
+            <div class="gallery">
+              <a href="images/animation/3.png" class="landscape">
+                <img src="images/animation/3.png" alt="" style='height: 100%; width: 100%; object-fit: contain' /></a>
+
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3 class="abc">Animation</h3>
+            <p class="abc">
+              Rotation of the sun rays was another animation done as another piece of composition
+              <pre>
+<code class="abc">
+    push();
+    translate(350,100);
+    rotate (rads);
+    for (var d = 0; d < 10; d ++){
+    noStroke();
+    fill(206+d,188+d,122+d);
+    ellipse(0,0,175,175);
+    stroke(206+d,188+d,122+d);
+    strokeWeight(3);
+    for (var i = 0; i < 36; i ++) {
+    line(0,0,x,y);
+    rotate(PI/20);
+    }
+    }
+    pop ();
+    rads = rads + 1.57; 
+
+</code>
+</pre>
+            </p>
+          </header>
+          <div class="content">
+
+            <span class="image main border">
+              <iframe src="p5/a2/index.html" width="100%" height="600"></iframe>
+            </span>
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+
+    <!-- 3 -->
+    <section>
+      <header>
+        <h2 class="abc">Boids - Flocking Animation </h2>
+        <p class="abc">
+          .I chose Flocking since I love the marine life and flocking was something that I wanted to do.While Looking for an algorithm that had attactrive force and repel force ,I came accross the BOIDSalgorithm by Craig Reynolds.
+
+        </p>
+      </header>
+      <div class="content">
+        <div class="gallery">
+          <strong> Ideation </strong>
+          <a href="images/animation/4.png" class="landscape">
+            <img src="images/animation/4.png" alt="" style='height: 100%; width: 100%; object-fit: contain' /></a>
+
+        </div>
+
+        <!-- Section -->
+        <section>
+          <header>
+            <h3 class="abc">Psuedocode</h3>
+          </header>
+          <div class="content">
+
+            Create the global variables
+            Create the fishes and whales array by inserting the projecting numbers
+            Create the recursive for loop for the fishes and the whale for the interactivity to increase the number of the fishes and whale
+            Usage of the boids algorithm(craig reynolds) which consist of the repulsion, align and attraction and hunted
+            Adding a repulsion force to prevent that two flocks get too close
+            Adding a force that aligns the velocities between relatively close
+            Introduce an attraction force between flocks
+            Introduce an repulsive force between flocks for the fishes to move away from the whale.
+            Adding an repulsive force to avoid the flock
+            Using a prototype function to create the flocks and project
+            them
+            Drawing the killer whale by painting the head , fin ,lower body and tail separately.
+
+
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3 class="abc">Result</h3>
+            
+          </header>
+          <div class="content">
+
+            <span class="image main border">
+                <iframe src="p5/a3/index.html" width ="100%" height="750"></iframe>
+            </span>
+          </div>
+        </section>
+
+      </div>
+    </section>
   </div>
 
   <!-- Scripts -->
