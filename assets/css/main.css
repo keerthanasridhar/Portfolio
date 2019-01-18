@@ -1760,7 +1760,7 @@ body.is-preload #header .content .inner {
   flex-direction: column;
   position: relative;
   max-width: 100%;
-  z-index: 3;
+  z-index: 13;
 }
 
 #main article {
@@ -1779,6 +1779,7 @@ body.is-preload #header .content .inner {
   background-color: rgba(27, 31, 34, 1);
   border-radius: 4px;
   opacity: 0;
+  z-index: 999999;
 }
 
 #main article.active {
