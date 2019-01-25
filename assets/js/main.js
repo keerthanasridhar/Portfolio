@@ -410,27 +410,33 @@ filterIcon.addEventListener('click', (e) => {
   switch (selectedFilters) {
 
     case "ui":
-      $('.filter').fadeOut('slow');
-      //   $('.ui').fadeOut('slow');
-      setTimeout(function() {
-        $('.ui').fadeIn('slow');
-      }, 500);
+    $('.design').hide() = false;
+    $('.ui').hide() = true
+      // $('.filter').fadeOut('slow');
+      // //   $('.ui').fadeOut('slow');
+      // setTimeout(function() {
+      //   $('.ui').fadeIn('slow');
+      // }, 0);
 
 
       break;
     case "design":
-      $('.filter').fadeOut('slow');
-	  //   $('.design').fadeOut('slow');
-	  setTimeout(function() {
-		$('.design').fadeIn('slow');
-      }, 500);
+    $('.design').hide() = true;
+    $('.ui').hide() = false;
+    //   $('.filter').fadeOut('slow');
+	  // //   $('.design').fadeOut('slow');
+	  // setTimeout(function() {
+		// $('.design').fadeIn('slow');
+    //   }, 0);
     //   $('.design').fadeIn('slow');
       break;
     default:
-	  $('.filter').fadeOut('slow');
-	  setTimeout(function() {
-		$('.filter').fadeIn('slow');
-      }, 500);
+    $('.design').hide() = false;
+    $('.ui').hide() = false
+	  // $('.filter').fadeOut('slow');
+	  // setTimeout(function() {
+		// $('.filter').fadeIn('slow');
+    //   }, 0);
       // $('.ui').fadeOut('slow');
       //   $('.ui').fadeIn('slow');
     //   $('.filter').fadeIn('slow');
@@ -439,66 +445,3 @@ filterIcon.addEventListener('click', (e) => {
   }
 
 })
-
-
-// test
-
-/* Open when someone clicks on the span element */
-function openNav(projectSelected) {
-	
-	document.getElementById("myNav").style.backgroundColor="inherit"
-	document.getElementById("myNav").style.width = "100%";
-  switch (projectSelected) {
-	case "infinity":
-      document.getElementById("ifame").src = "projects/infinity.html";
-	  break;
-	case "bloom":
-      document.getElementById("ifame").src = "projects/health.html";
-	  break;
-	  
-	case "twist":
-      document.getElementById("ifame").src = "projects/twist.html";
-	  break;
-	case "use":
-      document.getElementById("ifame").src = "projects/use.html";
-	  break;
-	case "design":
-      document.getElementById("ifame").src = "projects/design.html";
-	  break;	
-	  
-	case "food":
-      document.getElementById("ifame").src = "projects/food.html";
-	  break;
-	  
-	case "scoop":
-      document.getElementById("ifame").src = "projects/scoopdata.html";
-	  break;
-	  
-	case "expensify":
-	document.getElementById("myNav").style.backgroundColor = "white";
-      document.getElementById("ifame").src = "https://expensify-app-reactredux.herokuapp.com/";
-	  break;
-  case "pig":
-      document.getElementById("ifame").src = "projects/pig/index.html";
-      break;
-      case "affect":
-      document.getElementById("ifame").src = "projects/affect.html";
-      break; 
-    default:
-      document.getElementById("ifame").src = "projects/infinity1.html";
-      break;
-  }
- 
-   
-  return false;
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-  
-
-document.location.href = "#section2";
-
-
-}
