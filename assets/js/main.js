@@ -407,7 +407,7 @@ var oldScrollPos = 0,
   addScrollEvent = function() {
     oldScrollPos = scrollPos;
     scrollPos = $htmlbody.scrollTop();
-    console.log("old scrol"  + oldScrollPos + " new scrol" + scrollPos);
+    // console.log("old scrol"  + oldScrollPos + " new scrol" + scrollPos);
     if (scrollPos < $windowHeight) {
       //scroll down
       if (oldScrollPos < scrollPos) {
@@ -415,10 +415,11 @@ var oldScrollPos = 0,
       } else if (oldScrollPos > scrollPos) {
         window.scroll(0, 0);
       }
+      scrollPos = $htmlbody.scrollTop();
     }
   }
 
-window.addEventListener('scroll',throttling(addScrollEvent, 1, 1000) );
+window.addEventListener('scroll',throttling(addScrollEvent, 1, 500) );
 
 
 // window.addEventListener('scroll', debounce(addScrollEvent));
