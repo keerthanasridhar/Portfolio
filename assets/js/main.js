@@ -374,7 +374,6 @@
 
     $window
       .on('scroll', function() {
-
         oldScrollPos = scrollPos;
         scrollPos = $htmlbody.scrollTop();
 
@@ -400,48 +399,106 @@
 
 })(jQuery);
 
-
-
-
-let filterIcon = document.getElementById('filters')
-
-filterIcon.addEventListener('click', (e) => {
-  const selectedFilters = e.target.innerText.toLowerCase();
-  switch (selectedFilters) {
-
-    case "ui":
-    $('.design').hide() = false;
-    $('.ui').hide() = true
-      // $('.filter').fadeOut('slow');
-      // //   $('.ui').fadeOut('slow');
-      // setTimeout(function() {
-      //   $('.ui').fadeIn('slow');
-      // }, 0);
-
-
-      break;
-    case "design":
-    $('.design').hide() = true;
-    $('.ui').hide() = false;
-    //   $('.filter').fadeOut('slow');
-	  // //   $('.design').fadeOut('slow');
-	  // setTimeout(function() {
-		// $('.design').fadeIn('slow');
-    //   }, 0);
-    //   $('.design').fadeIn('slow');
-      break;
-    default:
-    $('.design').hide() = false;
-    $('.ui').hide() = false
-	  // $('.filter').fadeOut('slow');
-	  // setTimeout(function() {
-		// $('.filter').fadeIn('slow');
-    //   }, 0);
-      // $('.ui').fadeOut('slow');
-      //   $('.ui').fadeIn('slow');
-    //   $('.filter').fadeIn('slow');
-      break;
-
+var $window = $(window);
+var oldScrollPos = 0,
+  scrollPos = 0,
+  $htmlbody = $('html,body'),
+  $windowHeight = $window.height(),
+  addScrollEvent = function() {
+    oldScrollPos = scrollPos;
+    scrollPos = $htmlbody.scrollTop();
+    console.log("old scrol"  + oldScrollPos + " new scrol" + scrollPos);
+    if (scrollPos < $windowHeight) {
+      //scroll down
+      if (oldScrollPos < scrollPos) {
+        window.scroll($windowHeight, $windowHeight);
+      } else if (oldScrollPos > scrollPos) {
+        window.scroll(0, 0);
+      }
+    }
   }
 
-})
+window.addEventListener('scroll',throttling(addScrollEvent, 1, 1000) );
+
+
+// window.addEventListener('scroll', debounce(addScrollEvent));
+
+// quick search regex
+var qsRegex;
+var buttonFilter;
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+
+  filter: function() {
+    var $this = $(this);
+    var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+    var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+    return searchResult && buttonResult;
+  }
+});
+
+$('#filters').on('click', 'button', function() {
+  buttonFilter = $(this).attr('data-filter');
+  $grid.isotope();
+});
+
+// // use value of search field to filter
+// var $quicksearch = $('#quicksearch').keyup( debounce( function() {
+//   qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+//   $grid.isotope();
+// }) );
+
+
+//   // change is-checked class on buttons
+// $('.button-group').each( function( i, buttonGroup ) {
+//   var $buttonGroup = $( buttonGroup );
+//   $buttonGroup.on( 'click', 'button', function() {
+//     $buttonGroup.find('.is-checked').removeClass('is-checked');
+//     $( this ).addClass('is-checked');
+//   });
+// });
+
+
+// debounce so filtering doesn't happen every millisecond
+function debounce(fn, threshold) {
+  var timeout;
+  threshold = threshold || 5000;
+  return function debounced() {
+    console.log("Debpunce:Event being called");
+    clearTimeout(timeout);
+    var args = arguments;
+    var _this = this;
+
+    function delayed() {
+      fn.apply(_this, args);
+      console.log("Debpunce:Eventis over");
+    }
+    timeout = setTimeout(delayed, threshold);
+  };
+  console.log("Debpunce:Event being called");
+}
+
+
+
+
+function throttling(callback, limit, time) {
+  /// monitor the count
+  var calledCount = 0;
+
+  /// refesh the `calledCount` varialbe after the `time` has been passed
+  setInterval(function() {
+    calledCount = 0
+  }, time);
+
+  /// creating a clousre that will be called
+  return function() {
+    /// checking the limit (if limit is exceeded then do not call the passed function
+    if (limit > calledCount) {
+      /// increase the count
+      calledCount++;
+      callback(); /// call the function
+    } else console.log('not calling because the limit has exeeded');
+  };
+}

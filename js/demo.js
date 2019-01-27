@@ -339,6 +339,11 @@
 			this.current = this.items.indexOf(item);
 			// Hide all the grid items except the one we want to open.
 			this.hideAllItems(item);
+			// Vik 
+			// hide other items 
+			const section1Items = document.getElementById('section1');
+			section1Items.style.display = "none";
+
 			// Also hide the item texts.
 			item.hideTexts();
 			// Set the item´s z-index to a high value so it overlaps any other grid item.
@@ -415,6 +420,10 @@
 			const item = this.items[this.current];
 			// Hide the back control and scroll indicator and all the item´s content elements.
 			this.hideContentElems(contentEl, 0, withAnimation);
+						// Vik 
+			// hide other items 
+			const section1Items = document.getElementById('section1');
+			section1Items.style.display = "block";
 			// Set the grid´s image back to visible and hide the content´s one.
 			item.DOM.tilt.img.style.opacity = 1;
 			contentEl.DOM.img.style.visibility = 'hidden';
@@ -543,3 +552,5 @@
 		});
 	});
 }
+
+

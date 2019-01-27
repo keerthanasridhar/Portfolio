@@ -6,7 +6,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--grid-item-bg: #f1f1f1;
+	/* --grid-item-bg: #f1f1f1; */
 	/* --color-text: #4800d4;
     --color-bg: #e8e8e8;
     --color-link: #ec1752;
