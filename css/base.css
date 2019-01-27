@@ -6,21 +6,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	/* --grid-item-bg: #f1f1f1; */
-	/* --color-text: #4800d4;
-    --color-bg: #e8e8e8;
-    --color-link: #ec1752;
-    --color-link-hover: #eb1851;
-    --color-info: #272526;
-    --grid-item-bg: #f1f1f1;
-    --color-close: #ec1752;
-	font-family: Futura, "futura-pt", sans-serif;
-	min-height: 100vh;
-	color: #57585c;
-	color: var(--color-text);
-	background-color: #fff;
-	background-color: var(--color-bg); */
-}
+	--grid-item-bg: #171c23;
+	}
 
 /* Page Loader */
 .js .loading::before {
@@ -232,7 +219,7 @@ main {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	font-size: 2.65rem;
+	font-size: 1.65rem;
 	margin: 0 0 0.15rem;
 }
 
@@ -418,7 +405,7 @@ main {
 		font-size: 3vw;
 	}
 	.content__item-text {
-  		column-count: 2;
+  		/* column-count: 1; */
   		column-gap: 20px;
   	}
 	.content__item-img {
