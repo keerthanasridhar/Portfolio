@@ -124,34 +124,20 @@ let mood = "TodaysMood";
       </div>
 
       <!-- Footer -->
-      <!-- <footer id="footer">
-
-        <ul class="icons">
-          <li><a href="https://github.com/keerthanasridhar" class="icon fa-github"><span class="label">GitHub</span></a></li>
-          <li><a href="https://www.linkedin.com/in/keesridhar/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-          <li><a href="https://www.instagram.com/keerthanasridhar/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-        </ul>
-
-
-        <p class="copyright">&copy; Keerthana Sridhar 2019</p>
-      </footer> -->
+      
     </section>
     <section class="projects" id="section2">
-      <header class="header">
-        <nav id="filters">
-          <ul>
-            <li class="p"><a>All</a></li>
-            <li class="p2"><a>Design</a></li>
-            <li class="p3"><a>UI</a></li>
-          </ul>
-        </nav>
-      </header>
-
-
+      
+      <nav class="cl-effect-21" id="filters-project">
+        <a >All</a>
+        <a  id="filters-project-ui" >UI</a>
+        <a >Design</a>
+        <a >Play Ground</a>
+      </nav>
       <main>
         <div class="grid-wrap ">
           <div class="grid">
-            <a href="#" class="grid__item filter ui">
+            <a href="#" class="grid__item filter grid__item_design">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="projects/work/infinity.png" alt="Some image" />
@@ -159,7 +145,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Conceptual Design - Infinity Gauntlet</h3>
               <h1 class="grid__item-number"></h1>
             </a>
-            <a href="#" class="grid__item filter design">
+            <a href="#" class="grid__item filter grid__item_ui">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="projects/work/scoop.png" alt="Some image" />
@@ -167,7 +153,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Scoop Data - Fetch your recipe.</h3>
               <h4 class="grid__item-number"></h4>
             </a>
-            <a href="#" class="grid__item filter ui">
+            <a href="#" class="grid__item filter grid__item_ui">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="projects/work/pigme.png" alt="Some image" />
@@ -175,7 +161,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Pig Me -A UI project</h3>
               <h4 class="grid__item-number"></h4>
             </a>
-            <a href="#" class="grid__item filter ui">
+            <a href="#" class="grid__item filter grid__item_design">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="projects/work/healthbloom.png" alt="Some image" />
@@ -183,7 +169,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Health-bloom -Design Research</h3>
               <h4 class="grid__item-number"></h4>
             </a>
-            <a href="#" class="grid__item filter design">
+            <a href="#" class="grid__item filter grid__item_design">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="projects/work/affective.png" alt="Some image" />
@@ -191,7 +177,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Affective Computing Research study</h3>
               <h4 class="grid__item-number"></h4>
             </a>
-            <a href="#" class="grid__item filter design">
+            <a href="#" class="grid__item filter grid__item_design">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="projects/work/use.png" alt="Some image" />
@@ -199,7 +185,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Usability Evaluation</h3>
               <h5 class="grid__item-number"></h5>
             </a>
-            <a href="#" class="grid__item filter design">
+            <a href="#" class="grid__item filter grid__item_pg">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="img/7.jpg" alt="Some image" />
@@ -207,7 +193,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Desert races</h3>
               <h4 class="grid__item-number">M02</h4>
             </a>
-            <a href="#" class="grid__item filter ui">
+            <a href="#" class="grid__item filter grid__item_pg">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="img/8.jpg" alt="Some image" />
@@ -215,7 +201,7 @@ let mood = "TodaysMood";
               <h3 class="grid__item-title">Transcendence</h3>
               <h4 class="grid__item-number">KL7</h4>
             </a>
-            <a href="#" class="grid__item filter design">
+            <a href="#" class="grid__item filter grid__item_pg">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="img/9.jpg" alt="Some image" />
@@ -782,7 +768,17 @@ let mood = "TodaysMood";
   <!-- BG -->
   <div id="bg"></div>
 
+<!-- <footer id="footer">
 
+        <ul class="icons">
+          <li><a href="https://github.com/keerthanasridhar" class="icon fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href="https://www.linkedin.com/in/keesridhar/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://www.instagram.com/keerthanasridhar/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        </ul>
+
+
+        <p class="copyright">&copy; Keerthana Sridhar 2019</p>
+      </footer> -->
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
 
