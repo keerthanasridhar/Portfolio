@@ -14,7 +14,8 @@
   <link rel="stylesheet" type="text/css" href="css/base.css" />
   <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
-<link rel="shortcut icon" href="logo.ico" />
+
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
 <body class="is-preload">
   <!-- Wrapper -->
@@ -88,10 +89,10 @@
             </blockquote>
             <hr />
             <pre><code class= "e1">
-let mood = "TodaysMood";
-(()=>{
-<span class="e3">switch</span>(mood){
-	<span class="e3"> case </span><span class="e2">"DRINKING_COFFEE"</span>:
+            let mood = "TodaysMood";
+              (()=>{
+            <span class="e3">switch</span>(mood){
+	          <span class="e3"> case </span><span class="e2">"DRINKING_COFFEE"</span>:
 		<span class="e4"> return </span>"Start the day || (listen to Tame Impala && Deep Set)";
 	<span class="e3"> case </span> <span class="e2">"DESIGN_CODE"</span>:
 		<span class="e4"> return</span> "Brainstorm,mindmap and all set to work";
@@ -158,7 +159,7 @@ let mood = "TodaysMood";
               <div class="grid__item-wrap">
                 <img class="grid__item-img" src="projects/work/pigme.png" alt="Some image" />
               </div>
-              <h3 class="grid__item-title">Pig Me -A UI project</h3>
+              <h3 class="grid__item-title">Pig Me Game</h3>
               <h4 class="grid__item-number"></h4>
             </a>
             <a href="#" class="grid__item filter grid__item_design">
@@ -188,26 +189,26 @@ let mood = "TodaysMood";
             <a href="#" class="grid__item filter grid__item_pg">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
-                <img class="grid__item-img" src="img/7.jpg" alt="Some image" />
+                <img class="grid__item-img" src="projects/work/expense.png" alt="Some image" />
               </div>
-              <h3 class="grid__item-title">Desert races</h3>
-              <h4 class="grid__item-number">M02</h4>
+              <h3 class="grid__item-title">A budget App - Expensify</h3>
+              <h4 class="grid__item-number"></h4>
             </a>
             <a href="#" class="grid__item filter grid__item_pg">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
-                <img class="grid__item-img" src="img/8.jpg" alt="Some image" />
+                <img class="grid__item-img" src="projects/work/animation.png" alt="Some image" />
               </div>
-              <h3 class="grid__item-title">Transcendence</h3>
-              <h4 class="grid__item-number">KL7</h4>
+              <h3 class="grid__item-title">Experiemental animation</h3>
+              <h4 class="grid__item-number"></h4>
             </a>
             <a href="#" class="grid__item filter grid__item_pg">
               <div class="grid__item-bg"></div>
               <div class="grid__item-wrap">
-                <img class="grid__item-img" src="img/9.jpg" alt="Some image" />
+                <img class="grid__item-img" src="projects/work/boids.png" alt="Some image" />
               </div>
-              <h3 class="grid__item-title">Loosing my mind</h3>
-              <h4 class="grid__item-number">UY6</h4>
+              <h3 class="grid__item-title">Animation using p5-Boids</h3>
+              <h4 class="grid__item-number"></h4>
             </a>
           </div>
         </div><!-- /grid-wrap -->
@@ -260,8 +261,8 @@ let mood = "TodaysMood";
           </div><!-- /content__item -->
           <div class="content__item">
             <div class="content__item-intro">
-              <img class="content__item-img noimage"/>
-              <h2 class="content__item-title" style ="color: #9D54FE" >Scoop Data</h2>
+              <img class="content__item-img noimage" />
+              <h2 class="content__item-title" style="color: #9D54FE">Scoop Data</h2>
             </div>
             <h3 class="content__item-subtitle e2">"A UI that would help you fetch any recipe"</h3>
             <div class="content__item-text">
@@ -285,108 +286,118 @@ let mood = "TodaysMood";
               </iframe>
               <!-- </div> -->
 
-              <h2 style = "padding-top: 0.5rem">Technology Stack</h2>
+              <h2 style="padding-top: 0.5rem">Technology Stack</h2>
               <h3 class="s2">WebClient:</h3>
               <h5>Javascript(ES6+), HTML5, CSS3, Node.js</h5>
               <h3 class="s2">Bundle:</h3>
               <h5>Webpack4</h5>
-              <button href ="http://kee-recipie.us-west-2.elasticbeanstalk.com/">Working Demo</button>
-              <a href="https://github.com/keerthanasridhar/Recipe-Fetcher" class="icon fa-github">
-                <span class="label">Github
-                </span></a>
+              <button><a href="http://kee-recipie.us-west-2.elasticbeanstalk.com/" target="-blank">Working Demo</a></button>
+              <ul class="icons" style="padding:1rem">
+                <li><a href="https://github.com/keerthanasridhar/Recipe-Fetcher" class="icon fa-github">
+                  </a></li>
+              </ul>
+
             </div>
           </div><!-- /content__item -->
           <div class="content__item">
             <div class="content__item-intro">
-              <img class="content__item-img" src="img/3.jpg" alt="Some image" />
-              <h2 class="content__item-title">Wrecked and happy</h2>
+              <img class="content__item-img noimage" />
+              <h2 class="content__item-title" style="color: #9D54FE">Pig Me game</h2>
             </div>
-            <h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
+            <h3 class="content__item-subtitle e2">"Two Player dice rolling game - the dominant type of decision is
+              whether
+              or not to jeopardize previous gains by rolling for potential greater gain"</h3>
             <div class="content__item-text">
-              <p>When I was in the islands nearly a generation ago, I was acquainted with a young American couple who
-                had among their belongings an attractive little son of the age of seven—attractive but not practicably
-                companionable with me, because he knew no English. He had played from his birth with the little Kanakas
-                on his father’s plantation, and had preferred their language and would learn no other. The family
-                removed to America a month after I arrived in the islands, and straightway the boy began to lose his
-                Kanaka and pick up English. By the time he was twelve he hadn’t a word of Kanaka left; the language had
-                wholly departed from his tongue and from his comprehension. Nine years later, when he was twenty-one, I
-                came upon the family in one of the lake towns of New York, and the mother told me about an adventure
-                which her son had been having. By trade he was now a professional diver. A passenger boat had been
-                caught in a storm on the lake, and had gone down, carrying her people with her. A few days later the
-                young diver descended, with his armor on, and entered the berth-saloon of the boat, and stood at the
-                foot of the companionway, with his hand on the rail, peering through the dim water. Presently something
-                touched him on the shoulder, and he turned and found a dead man swaying and bobbing about him and
-                seemingly inspecting him inquiringly. He was paralyzed with fright.</p>
-              <p>His entry had disturbed the water, and now he discerned a number of dim corpses making for him and
-                wagging their heads and swaying their bodies like sleepy people trying to dance. His senses forsook
-                him, and in that condition he was drawn to the surface. He was put to bed at home, and was soon very
-                ill. During some days he had seasons of delirium which lasted several hours at a time; and while they
-                lasted he talked Kanaka incessantly and glibly; and Kanaka only. He was still very ill, and he talked
-                to me in that tongue; but I did not understand it, of course. The doctor-books tell us that cases like
-                this are not uncommon. Then the doctors ought to study the cases and find out how to multiply them.
-                Many languages and things get mislaid in a person’s head, and stay mislaid for lack of this remedy.</p>
-              <p>Several of our passengers belonged in Honolulu, and these were sent ashore; but nobody could go ashore
-                and return. There were people on shore who were booked to go with us to Australia, but we could not
-                receive them; to do it would cost us a quarantine-term in Sydney. They could have escaped the day
-                before, by ship to San Francisco; but the bars had been put up, now, and they might have to wait weeks
-                before any ship could venture to give them a passage any whither. And there were hardships for others.
-                An elderly lady and her son, recreation-seekers from Massachusetts, had wandered westward, further and
-                further from home, always intending to take the return track, but always concluding to go still a
-                little further; and now here they were at anchor before Honolulu positively their last westward-bound
-                indulgence—they had made up their minds to that—but where is the use in making up your mind in this
-                world? It is usually a waste of time to do it. These two would have to stay with us as far as
-                Australia. Then they could go on around the world, or go back the way they had come; the distance and
-                the accommodations and outlay of time would be just the same, whichever of the two routes they might
-                elect to take. Think of it: a projected excursion of five hundred miles gradually enlarged, without any
-                elaborate degree of intention, to a possible twenty-four thousand. However, they were used to
-                extensions by this time, and did not mind this new one much.</p>
+              <h2>
+                Description:
+              </h2>
+              <p>One of a fun interesting projects to kickstart the fear of coding was the pig game which is a two
+                player
+                rolling dice game.Rules: Each Players rolls the dice and the sum adds up until one of them roll a
+                6(Number can be customised)The First player to reach the limit wins the game.The UI lets to set the
+                winnign to target
+                and can be customized.
+              </p>
+              <h2 style="padding-top: 0.5rem">Technology Stack</h2>
+              <h3 class="s2">WebClient:</h3>
+              <h5>Javascript(ES6+),HTML5, CSS3</h5>
+              <button>
+
+                <a href="./projects/pig/index.html" target="-blank">Working Demo</a>
+              </button>
+
+              <ul class="icons" style="padding:1rem">
+                <li><a href="https://github.com/keerthanasridhar/Pig-Game" class="icon fa-github">
+                    <span class="label">Github
+                    </span></a></li>
+              </ul>
+
             </div>
           </div><!-- /content__item -->
           <div class="content__item">
             <div class="content__item-intro">
-              <img class="content__item-img" src="img/4.jpg" alt="Some image" />
-              <h2 class="content__item-title">The silent thief</h2>
+              <img class="content__item-img noimage" />
+              <h2 class="content__item-title" style="color: #9D54FE">Health-bloom </h2>
             </div>
-            <h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
+            <h3 class="content__item-subtitle">"A study on how to improve self advocacy for children"</h3>
             <div class="content__item-text">
-              <p>When I was in the islands nearly a generation ago, I was acquainted with a young American couple who
-                had among their belongings an attractive little son of the age of seven—attractive but not practicably
-                companionable with me, because he knew no English. He had played from his birth with the little Kanakas
-                on his father’s plantation, and had preferred their language and would learn no other. The family
-                removed to America a month after I arrived in the islands, and straightway the boy began to lose his
-                Kanaka and pick up English. By the time he was twelve he hadn’t a word of Kanaka left; the language had
-                wholly departed from his tongue and from his comprehension. Nine years later, when he was twenty-one, I
-                came upon the family in one of the lake towns of New York, and the mother told me about an adventure
-                which her son had been having. By trade he was now a professional diver. A passenger boat had been
-                caught in a storm on the lake, and had gone down, carrying her people with her. A few days later the
-                young diver descended, with his armor on, and entered the berth-saloon of the boat, and stood at the
-                foot of the companionway, with his hand on the rail, peering through the dim water. Presently something
-                touched him on the shoulder, and he turned and found a dead man swaying and bobbing about him and
-                seemingly inspecting him inquiringly. He was paralyzed with fright.</p>
-              <p>His entry had disturbed the water, and now he discerned a number of dim corpses making for him and
-                wagging their heads and swaying their bodies like sleepy people trying to dance. His senses forsook
-                him, and in that condition he was drawn to the surface. He was put to bed at home, and was soon very
-                ill. During some days he had seasons of delirium which lasted several hours at a time; and while they
-                lasted he talked Kanaka incessantly and glibly; and Kanaka only. He was still very ill, and he talked
-                to me in that tongue; but I did not understand it, of course. The doctor-books tell us that cases like
-                this are not uncommon. Then the doctors ought to study the cases and find out how to multiply them.
-                Many languages and things get mislaid in a person’s head, and stay mislaid for lack of this remedy.</p>
-              <p>Several of our passengers belonged in Honolulu, and these were sent ashore; but nobody could go ashore
-                and return. There were people on shore who were booked to go with us to Australia, but we could not
-                receive them; to do it would cost us a quarantine-term in Sydney. They could have escaped the day
-                before, by ship to San Francisco; but the bars had been put up, now, and they might have to wait weeks
-                before any ship could venture to give them a passage any whither. And there were hardships for others.
-                An elderly lady and her son, recreation-seekers from Massachusetts, had wandered westward, further and
-                further from home, always intending to take the return track, but always concluding to go still a
-                little further; and now here they were at anchor before Honolulu positively their last westward-bound
-                indulgence—they had made up their minds to that—but where is the use in making up your mind in this
-                world? It is usually a waste of time to do it. These two would have to stay with us as far as
-                Australia. Then they could go on around the world, or go back the way they had come; the distance and
-                the accommodations and outlay of time would be just the same, whichever of the two routes they might
-                elect to take. Think of it: a projected excursion of five hundred miles gradually enlarged, without any
-                elaborate degree of intention, to a possible twenty-four thousand. However, they were used to
-                extensions by this time, and did not mind this new one much.</p>
+              <h2>Description</h2>
+              <p>Create and research an application used by Kennedy Krieger Center for Autism and Related
+                 Disorders children to address the main concept of self-Advocacy in students for health. 
+                 The application is for the children to improve self advocacy by letting them go through a
+                  questionaire along side with a game to grow and nurture plants and give them a reason to
+                   come back to the application on the daily basis which could keep track of their health.The
+                    children wouldn't know that they are scrutinised and would be honest about the how they feel 
+                    everyday and this way the teachers could keep a track of the childrens health</p>
+                    <section>
+                        <h2 style = "padding: 1rem 0">Design Research Study</h2>
+                        <div class="table-wrapper">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>Steps</th>
+                                <th>Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Literature Review</td>
+                                <td>Self advocacy for College students,Counselling gay and lesbian clients, 
+                                  Dissonance and self-perception, Exploring the ethical underpinnings of self 
+                                  advoacy support for intectually disabled adults</td> 
+                              </tr>
+                              <tr>
+                                <td>User Interview</td>
+                                <td>Interviews conducted to the Mentor at the Kennedy Krieger Institute.</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>Prototyping</td>
+                                <td> Wireframes to Low - Medium Prototyping</td>
+                       
+                              </tr>
+                              <tr>
+                                <td>Heurestic Evaluations</td>
+                                <td>User Expereince,Effective and clear functionality.</td>
+                             
+                              </tr>
+                              <tr>
+                                <td>Research Paper</td>
+                                <td>Assist students in learning how to self advocate for health</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td colspan="2"></td>
+                              </tr>
+                            </tfoot>
+                          </table>
+                        </div>
+                        </section>
+                        <h2>Wireframming</h2>
             </div>
+            
+								
           </div><!-- /content__item -->
           <div class="content__item">
             <div class="content__item-intro">
@@ -481,49 +492,37 @@ let mood = "TodaysMood";
             </div>
           </div><!-- /content__item -->
           <div class="content__item">
-            <div class="content__item-intro">
-              <img class="content__item-img" src="img/7.jpg" alt="Some image" />
-              <h2 class="content__item-title">Desert races</h2>
-            </div>
-            <h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
+              <div class="content__item-intro">
+                  <img class="content__item-img noimage" />
+                  <h2 class="content__item-title" style="color: #9D54FE">Expensify</h2>
+                </div>
+            <h3 class="content__item-subtitle">"UI to manage expenses"</h3>
             <div class="content__item-text">
-              <p>When I was in the islands nearly a generation ago, I was acquainted with a young American couple who
-                had among their belongings an attractive little son of the age of seven—attractive but not practicably
-                companionable with me, because he knew no English. He had played from his birth with the little Kanakas
-                on his father’s plantation, and had preferred their language and would learn no other. The family
-                removed to America a month after I arrived in the islands, and straightway the boy began to lose his
-                Kanaka and pick up English. By the time he was twelve he hadn’t a word of Kanaka left; the language had
-                wholly departed from his tongue and from his comprehension. Nine years later, when he was twenty-one, I
-                came upon the family in one of the lake towns of New York, and the mother told me about an adventure
-                which her son had been having. By trade he was now a professional diver. A passenger boat had been
-                caught in a storm on the lake, and had gone down, carrying her people with her. A few days later the
-                young diver descended, with his armor on, and entered the berth-saloon of the boat, and stood at the
-                foot of the companionway, with his hand on the rail, peering through the dim water. Presently something
-                touched him on the shoulder, and he turned and found a dead man swaying and bobbing about him and
-                seemingly inspecting him inquiringly. He was paralyzed with fright.</p>
-              <p>His entry had disturbed the water, and now he discerned a number of dim corpses making for him and
-                wagging their heads and swaying their bodies like sleepy people trying to dance. His senses forsook
-                him, and in that condition he was drawn to the surface. He was put to bed at home, and was soon very
-                ill. During some days he had seasons of delirium which lasted several hours at a time; and while they
-                lasted he talked Kanaka incessantly and glibly; and Kanaka only. He was still very ill, and he talked
-                to me in that tongue; but I did not understand it, of course. The doctor-books tell us that cases like
-                this are not uncommon. Then the doctors ought to study the cases and find out how to multiply them.
-                Many languages and things get mislaid in a person’s head, and stay mislaid for lack of this remedy.</p>
-              <p>Several of our passengers belonged in Honolulu, and these were sent ashore; but nobody could go ashore
-                and return. There were people on shore who were booked to go with us to Australia, but we could not
-                receive them; to do it would cost us a quarantine-term in Sydney. They could have escaped the day
-                before, by ship to San Francisco; but the bars had been put up, now, and they might have to wait weeks
-                before any ship could venture to give them a passage any whither. And there were hardships for others.
-                An elderly lady and her son, recreation-seekers from Massachusetts, had wandered westward, further and
-                further from home, always intending to take the return track, but always concluding to go still a
-                little further; and now here they were at anchor before Honolulu positively their last westward-bound
-                indulgence—they had made up their minds to that—but where is the use in making up your mind in this
-                world? It is usually a waste of time to do it. These two would have to stay with us as far as
-                Australia. Then they could go on around the world, or go back the way they had come; the distance and
-                the accommodations and outlay of time would be just the same, whichever of the two routes they might
-                elect to take. Think of it: a projected excursion of five hundred miles gradually enlarged, without any
-                elaborate degree of intention, to a possible twenty-four thousand. However, they were used to
-                extensions by this time, and did not mind this new one much.</p>
+              <p>I was intrigued with the capabilities of the react and redux framework and wanted to put together 
+                an application that would keep a track of a users private expenses and calculate the budget of the 
+                users expenses.Used google authentication to verify the user using the application and firebase to 
+                save and retrieve the expenses of the use.</p>
+                <h2 style="padding-top: 1rem">Working Video</h2>
+                <!-- <div resp-container> -->
+                    <iframe src="https://player.vimeo.com/video/313828888" width="640" height="370" frameborder="0"
+                     webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <h2 style="padding-top: 0.5rem">Technology Stack</h2>
+              <h3 class="s2">WebClient:</h3>
+              <h5>React,Redux</h5>
+              <h3 class="s2">BackEnd:</h3>
+              <h5>Node.js</h5>
+              <h3 class="s2">Database</h3>
+              <h5>Firebase</h5>
+              <button>
+                <a href="http://bit.ly/expensify-app" target="-blank">Working Demo</a>
+              </button>
+              <ul class="icons" style="padding:1rem">
+                <li><a href="https://github.com/keerthanasridhar/expensify-app-React" class="icon fa-github">
+                    <span class="label">Github
+                    </span></a></li>
+              </ul>
+
+            </div>
             </div>
           </div><!-- /content__item -->
           <div class="content__item">
