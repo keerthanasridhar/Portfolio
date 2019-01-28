@@ -1739,6 +1739,10 @@ body.is-preload #header .content .inner {
     display: none;
   }
 
+  article {
+    width: -webkit-fill-available !important;
+  }
+
 }
 
 /* Main */
@@ -2073,4 +2077,11 @@ iframe {
 
   width: 100vw !important;
   height: 100vh !important;
+}
+
+
+article {
+  overflow: auto;
+  height: 100vh;
+
 }

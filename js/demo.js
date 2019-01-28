@@ -342,6 +342,7 @@
 			// Vik 
 			// hide other items 
 			const section1Items = document.getElementById('section1');
+			$('header').hide();
 			section1Items.style.display = "none";
 
 			// Also hide the item texts.

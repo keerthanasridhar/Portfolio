@@ -69,11 +69,31 @@
   var delay = 325,
     locked = false;
 
+    const preventDefault = (e) => {
+      e = e || window.event;
+      if (e.preventDefault)
+        e.preventDefault();
+      e.returnValue = false;  
+    }
+    const preventDefaultForScrollKeys = (e) => {
+      if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+      }
+    }
+    const disableScroll = () => {
+      if (window.addEventListener) // older FF
+        window.addEventListener('DOMMouseScroll', preventDefault, false);
+      window.onwheel = preventDefault; // modern standard
+      window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+      window.ontouchmove  = preventDefault; // mobile
+      document.onkeydown  = preventDefaultForScrollKeys;
+    }
+
   // Methods.
   $main._show = function(id, initial) {
-
     var $article = $main_articles.filter('#' + id);
-
+   $('#section2').hide();
     // No such article? Bail.
     if ($article.length == 0)
       return;
@@ -169,6 +189,7 @@
         // Hide header, footer.
         $header.hide();
         $footer.hide();
+        
 
         // Show main, article.
         $main.show();
@@ -296,6 +317,7 @@
       .appendTo($this)
       .on('click', function() {
         location.hash = '';
+        $('#section2').show();
       });
 
     // Prevent clicks from inside article from bubbling.
@@ -419,31 +441,12 @@ var oldScrollPos = 0,
     }
   }
 
-window.addEventListener('scroll',throttling(addScrollEvent, 1, 500) );
+// window.addEventListener('scroll',throttling(addScrollEvent, 1, 500) );
 
 
 // window.addEventListener('scroll', debounce(addScrollEvent));
 
 // quick search regex
-var qsRegex;
-var buttonFilter;
-
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-
-  filter: function() {
-    var $this = $(this);
-    var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
-    var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
-    return searchResult && buttonResult;
-  }
-});
-
-$('#filters').on('click', 'button', function() {
-  buttonFilter = $(this).attr('data-filter');
-  $grid.isotope();
-});
 
 // // use value of search field to filter
 // var $quicksearch = $('#quicksearch').keyup( debounce( function() {
