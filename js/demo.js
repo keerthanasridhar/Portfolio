@@ -492,6 +492,8 @@
         }
       });
       $('#section1').hide();
+      $('#filters-project').hide();
+      $('footer').hide();
     }
     closeItem(withAnimation = true) {
       
@@ -500,6 +502,8 @@
       // Get the content element respective to this grid item.
       const contentEl = this.contents[this.current];
       $('#section1').show();
+      $('#filters-project').show();
+      $('footer').show();
       // Scroll to the previous scroll position before opening the item.
       window.scrollTo(0, this.scrollPos);
       contentEl.DOM.el.parentNode.style.position = 'fixed';
