@@ -1,0 +1,15 @@
+.color-purple {
+    color: #9D54FE !important;
+}
+
+
+#section1 {
+    height: 100vh !important;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   }

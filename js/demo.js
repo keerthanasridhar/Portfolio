@@ -401,38 +401,11 @@
       // fetch the current filter group selected
       this.hideAllItems();
       // Animate the grid´s image back to the grid position.
-      TweenMax.to(item.DOM.tilt.img, withAnimation ? 1.2 : 0, {
-        ease: Expo.easeInOut,
-        scaleX: 1,
-        scaleY: 1,
-        x: 0,
-        y: 0,
-        rotation: item.angle * 2
-      });
-      // And also the bg element.
-      TweenMax.to(item.DOM.bg, withAnimation ? 1.2 : 0, {
-        ease: Expo.easeInOut,
-        delay: 0.10,
-        x: 0,
-        y: 0,
-        scaleX: 1,
-        scaleY: 1,
-        rotation: 0,
-        onComplete: () => {
-          contentEl.DOM.el.classList.remove('content__item--current');
-          item.DOM.bg.style.position = 'absolute';
-          item.DOM.bg.style.left = '0px';
-          item.DOM.bg.style.top = '0px';
-          this.current = -1;
-          allowTilt = true;
-          item.DOM.el.style.zIndex = 0;
-          enableScroll();
-          this.isAnimating = false;
-        }
-      });
+     
+     this.closeItem()
     }
     openItem(item) {
-		console.log(item);
+      console.log(item)
       if (this.isAnimating) return;
       this.isAnimating = true;
       // Get the current scroll position.
