@@ -449,11 +449,12 @@
       // hide other items 
       this.scrollPos = window.scrollY;
       // const section1Items = document.getElementById('section1');
-      // $('header').hide();
+      $('#section1').hide();
       // section1Items.style.display = "none";
 
       // Also hide the item texts.
       item.hideTexts();
+      
       // Set the item´s z-index to a high value so it overlaps any other grid item.
       item.DOM.el.style.zIndex = 1000;
       // Get the "grid__item-bg" width and height and set it explicitly, 
@@ -468,6 +469,7 @@
       // Calculate the viewport diagonal. We will need to take this in consideration when scaling up the item´s bg element.
       const d = Math.hypot(winsize.width, winsize.height);
       this.scrollPos = window.scrollY;
+     
       // $('#section1').hide();
       // Scale up the item´s bg element.
       TweenMax.to(item.DOM.bg, 1.2, {
@@ -479,6 +481,7 @@
         scaleY: d / itemDim.height,
         rotation: -1 * item.angle * 2
       });
+      
       // Get the content element respective to this grid item.
       const contentEl = this.contents[this.current];
       // Set it to current.
@@ -489,6 +492,7 @@
       const contentImgDim = this.getSizePosition(contentEl.DOM.img, false);
       // Show the back control and scroll indicator and all the item´s content elements (1 second delay).
       this.showContentElems(contentEl, 1);
+      window.scrollTo(0, 0);
       // Animate the item´s image.
       TweenMax.to(item.DOM.tilt.img, 1.2, {
         ease: Expo.easeInOut,
@@ -499,6 +503,7 @@
         y: (contentImgDim.top + contentImgDim.height / 2) - (imgDim.top + imgDim.height / 2),
         rotation: 0,
         onComplete: () => {
+          
           // Hide the item´s image and show the content´s image. Should both be overlapping.
           item.DOM.tilt.img.style.opacity = 0;
           contentEl.DOM.img.style.visibility = 'visible';
@@ -507,7 +512,7 @@
           // Hiding the grid scroll.
           this.DOM.gridWrap.classList.add('grid-wrap--hidden');
           // Scroll up the page.
-          window.scrollTo(0, 0);
+          
           // Enable page scrolling.
           enableScroll();
           this.isAnimating = false;
