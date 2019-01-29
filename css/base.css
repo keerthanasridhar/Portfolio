@@ -288,6 +288,7 @@ a:focus {
 	padding: 0 5vw;
 	white-space: nowrap;
 	grid-area: 1 / 1 / 1 / 1;
+	color: #9D54FE;
 }
 
 .content__item-title > span {
@@ -321,7 +322,8 @@ a:focus {
 	background: none;
 	border: 0;
 	margin: 0;
-	padding: 0;
+	padding: 0.5rem;
+	font-weight: 300;
 	cursor: pointer;
 	color: var(--color-text);
 }

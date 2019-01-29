@@ -1918,16 +1918,19 @@ iframe {
 .resp-container {
   position: relative;
   overflow: hidden;
-  padding-top: 30.25%;
+  padding: 36.25% 0;
 }
-.resp-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
- 
-  border: 0;
+
+@media screen  and (max-width: 640px) {
+  .resp-iframe {
+    /* position: ; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    
+  }
 }
 
 
