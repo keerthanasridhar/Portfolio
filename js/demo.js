@@ -449,7 +449,7 @@
       // hide other items 
       this.scrollPos = window.scrollY;
       // const section1Items = document.getElementById('section1');
-      $('#section1').hide();
+      // $('#section1').hide();
       // section1Items.style.display = "none";
 
       // Also hide the item texts.
@@ -518,12 +518,15 @@
           this.isAnimating = false;
         }
       });
+      $('#section1').hide();
     }
     closeItem(withAnimation = true) {
+      
       if (this.isAnimating) return;
       this.isAnimating = true;
       // Get the content element respective to this grid item.
       const contentEl = this.contents[this.current];
+      $('#section1').show();
       // Scroll to the previous scroll position before opening the item.
       window.scrollTo(0, this.scrollPos);
       contentEl.DOM.el.parentNode.style.position = 'fixed';
