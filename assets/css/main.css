@@ -1300,7 +1300,7 @@ body.is-preload #bg:before {
 
 /** */
 section {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* Wrapper */
@@ -2087,4 +2087,11 @@ article {
   overflow: auto;
   height: 100vh;
 
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
