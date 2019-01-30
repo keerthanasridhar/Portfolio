@@ -1542,6 +1542,7 @@ section {
   max-width: 100%;
 }
 
+
 #header .content .inner {
   -moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
   -webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1659,6 +1660,14 @@ body.is-preload #header .content .inner {
   padding-top: 0;
   padding-bottom: 0;
   opacity: 0;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
+.img-thumbnail {
+  width: 9rem;
+  height: 9rem;
 }
 
 @media screen and (max-width: 980px) {
@@ -1918,7 +1927,7 @@ iframe {
 .resp-container {
   position: relative;
   overflow: hidden;
-  padding: 36.25% 0;
+  padding: 16.25% 0;
 }
 
 @media screen  and (max-width: 640px) {
